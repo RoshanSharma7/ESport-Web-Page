@@ -1,0 +1,887 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+p{
+    font-size: 15px;
+    line-height: 17px;
+    color: rgb(182, 177, 177);
+    font-weight: 600;
+}
+h1{
+    font-size: 35px;
+}
+
+/*--navigation bor--*/
+
+nav{
+    height: 45px;
+    background-color:transparent;
+    position: sticky;
+    top: 0px;
+}
+nav h6{
+    font-size: 23px;
+    position: absolute;
+    top: 10px;
+    left: 25px;
+    color: rgb(183, 0, 255);
+    animation: logo 60s infinite linear;
+}
+@keyframes logo{
+    
+    100%{font-size: 20px;}
+}
+nav ul{
+    float: right;
+    margin-right: 25px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 55px;
+    margin: 0 8px;
+}
+nav ul li a{
+    position: relative;
+    color: rgba(79, 76, 76, 0.807);
+    font-size: 15px;
+    padding: 5px 0;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav ul li a:before {
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 100%;
+    background: rgb(255, 0, 0);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .4s linear;
+}
+nav ul li a:hover:before{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+label #btn,
+label #cancel{
+    color: rgb(90, 89, 89);
+    font-size: 20px;
+    float: right;
+    line-height: 52px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+@media (max-width: 944px) {
+    nav h6{
+        left: 5%;
+        top: 10px;
+        width: 130px;
+    }
+    nav ul li a{
+        font-size:15px
+    }  
+}
+@media (max-width: 860px) {
+    label #btn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background:rgb(182, 177, 177);
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+        font-weight: 200;
+    } 
+    #check:checked ~ ul{
+        left: 0;
+    }
+   #check:checked ~ label #btn{
+        display: none;
+    }
+    #check:checked ~ label #cancel{
+        display: block;
+    }
+}
+
+/*--home--*/
+
+#header{
+    background: url(photo/online-gaming-1595435856946.png);
+    background-size: cover;
+    background-position: top;
+    height: 100vh;
+}
+.cotainer{
+    margin-right: 100px;
+    margin-left: 100px;
+}
+.header-text {
+    text-align: left;
+    margin-top: 0px;
+}
+.header-text h1{
+    font-size: 70px;
+    color: rgb(166, 165, 165);
+    font-family: 'Odibee Sans', cursive;
+    letter-spacing: 5px;
+}
+span{
+    margin-left: 80px;
+    font-size: 15px;
+    line-height: 10px;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    line-height: 30px;
+    font-family: 'Cinzel', serif;
+    text-transform: uppercase;
+}
+.square{
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+    background: #ff5f02;
+    margin: 15px 0;
+    animation: name 5s infinite linear;
+}
+@keyframes name {
+    10%{background: black;}
+    20%{background: white;}
+    30%{background: gray;}
+    40%{background: red;}
+    50%{background: blue;}
+    60%{background: green;}
+    70%{background: pink;}
+    80%{background: yellow;}
+    90%{background: skyblue;}
+    100%{background: rgb(217, 151, 18);}
+}
+.comman-btn{
+    padding: 8px 10px;
+    background:transparent;
+    outline: none;
+    border: 2px solid red;
+    font-weight: 400;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.header-text p{
+    font-size: 15px;
+    line-height: 20px;
+    color: rgb(245, 241, 58);
+    font-weight: 600;
+    text-align:left;
+    font-family: 'Cinzel', serif;
+    text-transform: uppercase;
+}
+.header-text button{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.line-1{
+    width: 40px;
+    height: 2px;
+    background: #ff0000;
+    display: inline-block;
+}
+.line-2{
+    width: 60px;
+    height: 2px;
+    background: red;
+    display: inline-block;
+}
+.line-3{
+    width: 80px;
+    height: 2px;
+    background: red;
+    display: inline-block;
+}
+.line-4{
+    width: 100px;
+    height: 2px;
+    background: red;
+    display: inline-block;
+}
+.line-5{
+    width: 20px;
+    height: 2px;
+    background: red;
+    display: inline-block;
+}
+.line{
+    line-height: 5px;
+    margin-left: 0px;
+}
+
+.rks h1{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    margin-top: 30px;
+    color: transparent;
+    -webkit-text-stroke: 1px rgb(255, 250, 255);
+    background: url(photo/re.jpg);
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: back 9s linear infinite;
+}
+@keyframes back{
+    100%{
+    background-position: 2000px 0;
+    }
+}
+
+/* counter with join*/
+
+.counter-up{
+  padding: 0 50px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.counter-up::before{
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgb(5, 5, 5);
+}
+.counter-up .content{
+  z-index: 1;
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.counter-up .content .box{
+  border: 1px black;
+  width: calc(15% - 30px);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  padding: 20px;
+}
+.content .box .icon{
+  font-size: 48px;
+  color: #e6e6e6;
+}
+.content .box .counter{
+  font-size: 50px;
+  font-weight: 500;
+  color: #f2f2f2;
+  font-family: sans-serif;
+}
+.content .box .text{
+  font-weight: 400;
+  color: #ccc;
+}
+@media screen and (max-width: 1036px) {
+  .counter-up{
+    padding: 50px 50px 0 50px;
+  }
+  .counter-up .content .box{
+    width: calc(50% - 30px);
+    margin-bottom: 50px;
+  }
+}
+@media screen and (max-width: 580px) {
+  .counter-up .content .box{
+    width: 100%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .wrapper{
+    padding: 20px;
+  }
+  .counter-up{
+    padding: 30px 20px 0 20px;
+  }
+}
+
+/*about*/
+
+#about{
+    padding: 100px 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+.about-left-col{
+    flex-basis: 50%;
+}
+.about-left-col img{
+    width: 100%;
+   
+}
+.about-right-col{
+    flex-basis: 50%;
+    text-align: right;
+}
+.about-text{
+    max-width: 500px;
+    margin-right: 80px;
+    display: inline-block;
+}
+.about-text h2{
+    margin: 10px 0 10px;
+    font-size: 25px;
+    font-style: oblique;
+}
+.about-text h3{
+    font-size: 18px;
+    font-style:unset;
+    color: rgb(226, 96, 96);
+}
+
+a{
+    text-decoration: none;
+    color: red;
+}
+
+/* features*/
+
+#features{
+    padding-top:50px ;
+    padding-bottom: 50px;
+}
+.features-row{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.features-col{
+    flex-basis: 20%;
+    text-align: center;
+}
+.features-col img{
+    height: 100px;
+    width: 100px;
+}
+.features-col h4{
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: 300;
+}
+.feature-btn{
+    margin: 50px auto 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.feature-btn .line{
+    text-align: right;
+    display: inline-block;
+    margin-right:20px ;
+}
+.features-col:hover{
+    background-color: beige;
+    box-shadow: 6px 8px 12px rgb(220, 216, 216);
+    transition: 0.5s;
+}
+
+
+#features h2{
+    padding: 100px;
+}
+
+/* indian */
+
+#indian{
+    padding: 100px 0;
+}
+.indian-row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.india-right-col{
+    flex-basis: 50%;
+}
+.india-right-col img{
+    width: 90%;
+    
+}
+.india-left-col{
+    flex-basis: 50%;
+}
+.indian-text{
+    max-width: 500px;
+}
+.indian-text h3{
+    font-size: 18px;
+    font-style:unset;
+    color: rgb(226, 96, 96);
+}
+.indian-text h2{
+    margin: 10px 0 10px;
+    font-size: 25px;
+    font-style: oblique;
+}
+
+
+/* game*/
+
+#game{
+    padding-top:50px ;
+    padding-bottom: 50px;
+}
+.game-row{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.game-col{
+    flex-basis: 25%;
+    text-align: center;
+    margin-bottom: 30px;
+    padding-top: 30px;
+}
+.game-col img{
+    height: 100px;
+    width: 100px;
+    margin-bottom: 15px;
+    border: 3px solid gray;
+    border-radius: 5px;
+}
+.game-col h4{
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: 300;
+    
+}
+.game-btn{
+    margin: 50px auto 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.game-btn .line{
+    text-align: right;
+    display: inline-block;
+    margin-right:20px ;
+}
+.game-col a{
+    text-decoration: none;
+    color: rgb(18, 236, 109);
+    margin-bottom: 20px;
+}
+.game-col:hover{
+    background-color: rgb(236, 234, 234);
+    box-shadow: 5px 8px 12px rgb(220, 216, 216);
+    transition: 0.5s;
+}
+
+/*--offer--*/
+
+#offer{
+    padding: 100px 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.offer-left-col{
+    flex-basis: 50%;
+}
+.offer-left-col img{
+    width:100%;   
+}
+.offer-right-col{
+    flex-basis: 50%;
+    text-align: right;
+}
+.offer-text{
+    max-width: 500px;
+    margin-right: 80px;
+    display: inline-block;
+}
+.offer-text h2{
+    margin: 10px 0 10px;
+    font-size: 25px;
+    font-style: oblique;
+}
+.offer-text h3{
+    font-size: 18px;
+    font-style:unset;
+    color: rgb(226, 96, 96);
+}
+
+/*--contect---*/
+
+.contect-row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.contect-left-col,.contect-right-col{
+    flex-basis: 50%;
+}
+.contect-right-col img{
+    width: 90%;
+    margin-right: 1px;
+}
+form{
+    max-width: 350px;
+    margin: 30px 0px 10px 0px;
+}
+form input{
+    width: 100%;
+    padding: 12px 10px;
+    margin-bottom: 5px;
+    outline: none;
+    box-shadow: none;
+    box-sizing: border-box;
+    border: 2px solid red;
+}
+.btn-box{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}   
+.btn-box button{
+    flex-basis: 48%;
+    padding: 18px 0;
+}
+
+/*--footer--*/
+
+#footer{
+    padding: 30px 0px 30px;
+    background-color: rgb(233, 230, 230);
+}
+hr{
+    width: 100%;
+    border: 0;
+    border-top: 1px solid red;
+
+}
+.footer-row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.footer-left-col{
+    flex-basis: 50%;
+    margin-top: 40px;
+}
+.footer-right-col{
+    flex-basis: 40%;
+}
+.footer-links{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.link-title h4{
+    color: darkblue;
+    margin-bottom: 20px;
+}
+.link-title small{
+    font-size: 13px;
+    color:lightslategrey;
+}
+.footer-info{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.footer-logo h5{
+    font-size: 25px;
+    color: red;
+    color: transparent;
+    -webkit-text-stroke: 0.1px rgb(255, 0, 234);
+    background: url(photo/re.jpg);
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: back 15s linear infinite;
+}
+@keyframes back{
+    100%{
+    background-position: 2000px 0;
+    }
+
+}
+.footer-logo button{
+    padding: 12px 20px;
+    margin-top: 20px;
+    font-size: 12px;
+}
+.copyright-text, .footer-logo{
+    flex-basis: 40%;
+}
+.social-icon img{
+    width: 25px;
+    height: 25px;
+    display: block;
+    margin: 10px auto 20px;
+    cursor: pointer;
+}
+.social-icon{
+    width: 50px;
+    position: fixed;
+    top: 35%;
+    left: 3px;
+    /*transform: rotateY(-50%);*/
+    z-index: 1;
+}
+.social-icon img:hover{
+    color: red;
+}
+
+@media (max-width: 420px) {
+    #header{
+        background-image: url(photo/background.jpg);
+        background-size: cover;
+    }
+    .cotainer{
+        margin-right: 25px;
+        margin-left: 25px;
+    }
+    .header-text {
+        margin-top: 20px;
+    }
+    .header-text h1{
+        font-size: 25px;
+        color: rgb(0, 255, 200);
+    }
+    .header-text p{
+        font-size: 20px;
+        line-height: 30px;
+        color: rgb(255, 0, 43);
+        font-weight: 600;
+    }
+    .rks h1{
+        font-size: 50px;
+        margin-top: 100px;
+        color: transparent;
+        -webkit-text-stroke: 0.5px rgb(255, 255, 255);
+        background: url(photo/re.jpg);
+        -webkit-background-clip: text;
+        background-position: 0 0;
+        animation: back 9s linear infinite;
+    }
+    .social-icon img{
+        width: 25px;
+        height: 25px;
+        margin: 10px auto 20px;
+        cursor: pointer;
+    }
+    .about-left-col, .about-right-col{
+        flex-basis: 100%;
+    }
+    .about-text{
+        margin: 50px 50px 0;
+        display: inline-block;
+    }
+    .about-text h2, .indian-text h2, .offer-text h2{
+        font-size: 18px;
+    }
+    p{
+        font-size: 20px;
+        line-height: 25px;
+        color: rgb(182, 177, 177);
+        font-weight: 600;
+    }
+    .features-col{
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+    .india-left-col{
+        flex-basis: 100%;
+    }
+    .india-right-col{
+        flex-basis: 100%;
+        margin-top: 19px;
+    }
+    .game-col{
+        flex-basis: 50%;
+        text-align: center;
+        margin-bottom: 30px;
+        padding-top: 30px;
+    }
+    .offer-left-col, .offer-right-col{
+        flex-basis: 100%;
+    }
+    .offer-text{
+        display: inline-block;
+        margin: 50px 50px 0;
+    }
+    .contect-left-col,.contect-right-col{
+        flex-basis: 100%;
+    }
+    .contect-right-col{
+        margin-top: 50px;
+    }
+    .footer-left-col, .footer-right-col{
+        flex-basis: 100%;
+    }
+    .link-title{
+        margin-bottom: 30px;
+    }
+}
+@media (max-width: 768px) {
+    #header{
+        background-image: url(photo/background.jpg);
+        background-size: cover;
+    }
+    .cotainer{
+        margin-right: 28px;
+        margin-left: 28px;
+    }
+    .header-text {
+        margin-top: 20px;
+    }
+    .header-text h1{
+        font-size: 35px;
+        color: rgb(0, 255, 200);
+    }
+    .header-text p{
+        font-size: 25px;
+        line-height: 30px;
+        color: rgb(233, 181, 190);
+        font-weight: 600;
+    }
+    .rks h1{
+        font-size: 80px;
+        margin-top: 100px;
+        color: transparent;
+        -webkit-text-stroke: 0.5px rgb(255, 255, 255);
+        background: url(photo/re.jpg);
+        -webkit-background-clip: text;
+        background-position: 0 0;
+        animation: back 9s linear infinite;
+    }
+    .social-icon img{
+        width: 25px;
+        height: 25px;
+        margin: 10px auto 20px;
+        cursor: pointer;
+    }
+    .about-left-col, .about-right-col{
+        flex-basis: 100%;
+    }
+    .about-text{
+        margin: 50px 50px 0;
+        display: inline-block;
+    }
+    .about-text h2, .indian-text h2, .offer-text h2{
+        font-size: 33px;
+    }
+    p{
+        font-size: 30px;
+        line-height: 35px;
+        color: rgb(137, 137, 137);
+        font-weight: 600;
+    }
+    .features-col{
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+    .india-left-col{
+        flex-basis: 100%;
+    }
+    .india-right-col{
+        flex-basis: 100%;
+        margin-top: 19px;
+    }
+    .game-col{
+        flex-basis: 50%;
+        text-align: center;
+        margin-bottom: 30px;
+        padding-top: 30px;
+    }
+    .offer-left-col, .offer-right-col{
+        flex-basis: 100%;
+    }
+    .offer-text{
+        display: inline-block;
+        margin: 50px 50px 0;
+    }
+    .contect-left-col,.contect-right-col{
+        flex-basis: 100%;
+    }
+    .contect-right-col{
+        margin-top: 50px;
+    }
+    .contect-left-col input{
+        width: 100%;
+    }
+    .contect-left-col h1 br{
+        display: none;
+    }
+    .footer-left-col, .footer-right-col{
+        flex-basis: 100%;
+    }
+    .footer-left-col h4{
+        font-size: 19px;
+    }
+    .footer-left-col small{
+        font-size: 16px;
+    }
+    .link-title{
+        margin-bottom: 30px;
+    }
+    .about-text h1, .indian-text h1, .offer-text h1{
+        font-size: 50px;
+    }
+    .about-text, .indian-text, .offer-text{
+        max-width: none;
+    } 
+    .comman-btn{
+        padding: 20px 40px;
+        background:transparent;
+        outline: none;
+        border: 2px solid red;
+        font-weight: 400;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 20px;
+    }
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+

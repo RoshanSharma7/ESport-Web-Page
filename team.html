@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Staff</title>
+
+  <style>
+    @import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #12172b;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.heading {
+  font-size: 60px;
+  color: white;
+}
+
+.heading span {
+  font-style: italic;
+  font-size: 30px;
+}
+
+.profiles{
+  display: flex;
+}
+.profile .profile-img {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  filter: grayscale(100%);
+  cursor: pointer;
+  transition: 400ms;
+}
+
+.profile:hover .profile-img {
+  filter: grayscale(0);
+}
+
+.user-name {
+  margin-top: 30px;
+  font-size: 35px;
+  color: #ccc;
+}
+
+.profile h5 {
+  font-size: 18px;
+  font-weight: 100;
+  letter-spacing: 3px;
+  color: #ccc;
+}
+
+.profile p {
+  font-size: 16px;
+  margin-top: 20px;
+  text-align: justify;
+  color: #ccc;
+}
+
+@media only screen and (max-width: 1150px) {
+  .profiles {
+    flex-direction: column;
+  }
+
+  .profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile p {
+    text-align: center;
+    margin: 20px 60px 80px 60px;
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .heading {
+    font-size: 40px;
+    color: white;
+    text-align: center;
+  }
+
+  .heading span {
+    font-size: 15px;
+  }
+
+  .profiles {
+    margin: 20px 0;
+  }
+
+  .profile p {
+    margin: 20px 10px 80px 10px;
+  }
+}
+
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="heading"><span>meet</span>Our Team</h1>
+
+    <div class="profiles">
+
+      <div class="profile">
+        <img src="photo/rohit.jpg" class="profile-img">
+
+        <h3 class="user-name">Rohit Sharma</h3>
+        <h5>Free Fira & BGMI Player</h5>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing  soluta hic sunt sit reprehenderit. <br> Mobile- 9770273*** <br>Email- rohit.amlai@******</p>
+      </div>
+      <div class="profile">
+        <img src="photo/santosh.jpeg" class="profile-img">
+
+        <h3 class="user-name">Santosh Yadav</h3>
+        <h5>Pubg Lite & BGMI Player</h5>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam facilis sint quod. <br>Mobile- 9630107*** <br>Email- yadavji@96******</p>
+      </div>
+      <div class="profile">
+        <img src="photo/sivam.JPG" class="profile-img">
+
+        <h3 class="user-name">Sivam Napit</h3>
+        <h5>BGMT & Train Simuloter Player</h5>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, eveniet. <br>Mobile- 9584659***. <br>Email- NampitShivam@******</p>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="profile">
+        <img src="photo/sanjay.JPG" class="profile-img">
+        
+        <h3 class="user-name">Sanjay Suryavanshi</h3>
+        <h5>Maincraft & ludo or GTA 5</h5>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, eveniet. <br>Mobile- 9399102***. <br>Email- ssanjay93@******</p>
+      </div>
+      <div class="profile">
+        <img src="photo/priyes.JPG" class="profile-img">
+        
+        <h3 class="user-name">Priyesh Agrwal</h3>
+        <h5>GTA5 & Train Simuloter Player</h5>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, eveniet. <br>Mobile- 7989529***. <br>Email- priyeash413@******</p>
+      </div>
+      <div class="profile">
+        <img src="photo/rahul.jpg" class="profile-img">
+        
+        <h3 class="user-name">Rahul Goutam</h3>
+        <h5>BGMT & Reacing games player</h5>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, eveniet. <br>Mobile- 9586559***. <br>Email- RKgoutam@******</p>
+      </div>
+    </div>
+    
+  </div>
+</body>
+
+</html>
